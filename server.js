@@ -17,15 +17,11 @@ const productRouter = require("./routes/productRouter");
 // mongodb settings
 const mongoose = require("mongoose");
 const DB_NAME = process.env.DB_NAME;
-const DB_LINK = process.env.MONGO_LINK + DB_NAME;
+const DB_LINK = process.env.MONGO_LINK+DB_NAME;
 
 app.set("view engine", "hbs");
 app.use(express.static(`${__dirname}/public`));
-app.use(
-  express.urlencoded({
-    extended: false,
-  })
-);
+app.use( express.urlencoded({extended: false}));
 
 // database connection
 mongoose
