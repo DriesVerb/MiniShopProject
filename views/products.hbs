@@ -17,7 +17,10 @@
               <button type="submit" value="Submit" class="btn">Submit</button>
        </form>
 </div>
-{{#if products}}
+
+
+ {{#if doc.isLoggedIn}}
+       {{#if products}}
 <h2>Here are our products</h2>
 <ul>
        {{#each products}}
@@ -26,5 +29,8 @@
        <li>{{discount}}</li>
        <li>{{quantity}}</li>
        {{/each}}
+      
 </ul>
 {{/if}}
+       {{/if}}
+

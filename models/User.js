@@ -11,6 +11,7 @@ const UserSchema = new Schema({
   signUpDate: Date,
   jobTitle: String,
   admin: Boolean,
+  isLoggedIn: Boolean,
 });
 
 //turn Schema into Model
