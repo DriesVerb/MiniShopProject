@@ -17,7 +17,6 @@ exports.validateUser = (req, res) => {
       Product.find((err, data) => {
         res.render("products", { products: data, doc });
       });
-      // res.render("products", { doc });
     });
   });
 };

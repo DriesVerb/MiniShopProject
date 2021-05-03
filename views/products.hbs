@@ -1,5 +1,6 @@
 <h1>Products</h1>
 
+ {{#if doc.isLoggedIn}}
 <div class="container">
      <form action="/products" method="post">
              <label for="title">Title</label>
@@ -17,10 +18,10 @@
               <button type="submit" value="Submit" class="btn">Submit</button>
        </form>
 </div>
+ {{/if}}
 
 
- {{#if doc.isLoggedIn}}
-       {{#if products}}
+{{#if products}}
 <h2>Here are our products</h2>
 <ul>
        {{#each products}}
@@ -28,9 +29,10 @@
        <li>{{price}}</li>
        <li>{{discount}}</li>
        <li>{{quantity}}</li>
+       <a href='/products/delete/{{_id}}' type="submit">&#128465;</a>
        {{/each}}
       
 </ul>
 {{/if}}
-       {{/if}}
+      
 
