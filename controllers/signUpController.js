@@ -9,7 +9,6 @@ exports.signUpPost = (req, res) => {
   newUser
     .save()
     .then(() => {
-      console.log(newUser);
       console.log("you saved a user- well done !! :D");
       res.redirect("/login");
     })
