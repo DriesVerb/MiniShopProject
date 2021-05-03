@@ -395,11 +395,11 @@ button:focus {
 @keyframes signUp {
   0% {
     right: -800px;
-    top: 25px;
+    top: 28px;
   }
   100% {
     right: 20px;
-    top: 25ipx;
+    top: 28px;
   }
 }
 @media (max-width: 500px) {
