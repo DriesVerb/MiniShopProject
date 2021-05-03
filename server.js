@@ -32,6 +32,7 @@ mongoose
   .connect(DB_LINK, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
+    useFindAndModify: false,
   })
   .then(() => {
     console.log(`Mongo database is connected`);
