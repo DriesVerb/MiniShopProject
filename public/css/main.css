@@ -1,15 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
-bold-line
-* {
+bold-line * {
   margin: 0px;
   padding: 0px;
-
 }
 html,
-header
- {
-   margin: 0;
-    /* height: 100vh; */
+header {
+  margin: 0;
+  /* height: 100vh; */
 }
 body {
   font-family: Ariel, Helvetica, sans-serif;
@@ -19,53 +16,55 @@ body {
   text-align: center;
   height: 100vh;
   font-family: roboto;
-  
 }
 .navbar {
-
   background-color: rgb(80, 169, 185);
 }
 #intro {
-    height: 100vh;
-    
-    background: url('/img/shopping.jpeg')no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+  height: 100vh;
+
+  background: url('/img/shopping.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 .box {
-    background-color: rgb(250, 246, 246); /* Fallback color */
-    background-color: rgba(252, 249, 249, 0.747);  /* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-  
-    position: absolute;
-    z-index: 1;
-    top: 400px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    height: 100%;
-    width: 70%;
-    opacity: 0;
-    animation-name: btn;
-    animation-duration: 5s;
-    animation-delay: .5s;  
-    animation-fill-mode: forwards;
-    transition-property: transform;
-    transition-duration: .5s;
-   }
+  background-color: rgb(250, 246, 246); /* Fallback color */
+  background-color: rgba(
+    252,
+    249,
+    249,
+    0.747
+  ); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
 
-.arrange{
-    position: absolute;
-    width: 100vw;
-    height: 0vh;
+  position: absolute;
+  z-index: 1;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  height: 100%;
+  width: 70%;
+  opacity: 0;
+  animation-name: btn;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.arrange {
+  position: absolute;
+  width: 100vw;
+  height: 0vh;
 }
 .container {
-    
   max-width: 960px;
   margin: auto;
   padding: 0 30px;
@@ -73,21 +72,19 @@ body {
 
 #showcase {
   height: 300px;
- 
 }
 
 #showcase h1 {
   text-shadow: 1px 1px 5px rgb(95, 73, 40);
   position: absolute;
   z-index: 3;
-font-size: 50px;
-line-height: 1.3;
-position: relative;
-animation: heading;
-animation-duration: 1.5s;
-animation-fill-mode: forwards;
-color:rgb(243, 186, 63);
-
+  font-size: 50px;
+  line-height: 1.3;
+  position: relative;
+  animation: heading;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  color: rgb(243, 186, 63);
 }
 
 @keyframes heading {
@@ -95,14 +92,14 @@ color:rgb(243, 186, 63);
     top: -1000px;
   }
   100% {
-    top:-500px;
+    top: -500px;
   }
 }
 
 #content {
   color: rgb(209, 116, 116);
-    position: absolute;
-    z-index: 3;
+  position: absolute;
+  z-index: 3;
   animation-name: content;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
@@ -126,17 +123,17 @@ color:rgb(243, 186, 63);
 }
 
 .btn {
-    position: absolute;
-    z-index: 3;
-    top: 420px;
+  position: absolute;
+  z-index: 3;
+  top: 420px;
   display: inline-block;
 
-left: 620px;
+  left: 620px;
 
-font-family: roboto;
+  font-family: roboto;
   font-weight: 600;
   text-decoration: none;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   /* color: cyan ; */
   border: cyan 1px solid;
   box-shadow: 1px 1px 5px rgb(125, 147, 206);
@@ -165,11 +162,7 @@ font-family: roboto;
   }
 }
 
-
-
 /* style form */
-
-
 
 button:focus {
   outline: none;
@@ -179,7 +172,7 @@ button:focus {
   color: rgba(255, 255, 255, 0.65);
 }
 
-::-webkit-input-placeholder .input-line:focus +::input-placeholder {
+::-webkit-input-placeholder .input-line:focus + ::input-placeholder {
   color: #fff;
 }
 
@@ -187,12 +180,12 @@ button:focus {
   color: rgb(243, 186, 63);
   font-weight: 400;
   cursor: pointer;
-  transition: color .2s ease;
+  transition: color 0.2s ease;
 }
 
 .highlight:hover {
   color: rgba(255, 255, 255, 0.8);
-  transition: color .2s ease;
+  transition: color 0.2s ease;
 }
 
 .spacing {
@@ -204,14 +197,14 @@ button:focus {
   font-weight: 300;
   text-align: center;
   margin-top: 10px;
-  color: rgba(255, 255, 255, 0.65)
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .input-line:focus {
   outline: none;
   border-color: #fff;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .ghost-round {
@@ -230,16 +223,15 @@ button:focus {
   line-height: 2.5em;
   margin-top: auto;
   margin-bottom: 25px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .ghost-round:hover {
   background: rgba(255, 255, 255, 0.15);
   color: #fff;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .input-line {
@@ -256,8 +248,8 @@ button:focus {
   border: 1px solid rgba(255, 255, 255, 0.65);
   padding-left: 10px;
 
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .full-width {
@@ -281,10 +273,14 @@ button:focus {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
- 
-  background: url('/img/shopping.jpeg')no-repeat center center fixed;
- 
-  background-image: linear-gradient(to bottom right, rgba(253, 247, 221, 0.418), rgba(181, 252, 246, 0.705));
+
+  background: url('/img/shopping.jpeg') no-repeat center center fixed;
+
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(253, 247, 221, 0.418),
+    rgba(181, 252, 246, 0.705)
+  );
   height: 100%;
 }
 
@@ -309,7 +305,6 @@ button:focus {
   font-size: 2.5rem;
   letter-spacing: 0px;
   letter-spacing: 0.05rem;
-  
 }
 
 .subtitle {
@@ -321,7 +316,6 @@ button:focus {
   letter-spacing: 0.02rem;
   font-size: 20px;
   color: blanchedalmond;
-
 }
 
 .menu {
@@ -348,20 +342,21 @@ button:focus {
   height: 560px;
   width: 600px;
   background: #fff;
-  background: url('https://pexels.imgix.net/photos/27718/pexels-photo-27718.jpg?fit=crop&w=1280&h=823') top left no-repeat;
+  background: url('https://pexels.imgix.net/photos/27718/pexels-photo-27718.jpg?fit=crop&w=1280&h=823')
+    top left no-repeat;
   position: relative;
   animation: win;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
- @keyframes win {
+@keyframes win {
   0% {
     top: -800px;
   }
   100% {
-    top:20px;
+    top: 20px;
   }
-} 
+}
 
 .overlay {
   background: -webkit-linear-gradient(rgb(80, 169, 185), rgb(171, 250, 239));
@@ -389,24 +384,24 @@ button:focus {
 } */
 
 #windowSignup {
-  
   background: #fff;
-  background: url('https://pexels.imgix.net/photos/27718/pexels-photo-27718.jpg?fit=crop&w=1280&h=823') top left no-repeat;
+  background: url('https://pexels.imgix.net/photos/27718/pexels-photo-27718.jpg?fit=crop&w=1280&h=823')
+    top left no-repeat;
   position: relative;
   animation: signUp;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
- @keyframes signUp {
+@keyframes signUp {
   0% {
     right: -800px;
     top: 25px;
   }
   100% {
-    right:20px;
-    top: 25px;
+    right: 20px;
+    top: 25ipx;
   }
-} 
+}
 @media (max-width: 500px) {
   .window {
     width: 100%;
